@@ -137,7 +137,7 @@ export function Game({ ballCount }: any) {
       position: {
         x: 0,
         y: 30,
-        z: 4.5,
+        z: 2.5,
       },
     };
     setBalls((balls: any) => [...balls, ball]);
@@ -145,9 +145,9 @@ export function Game({ ballCount }: any) {
 
   const addLoopBalls = () => {
     for (let i = 0; i < 50; i++) {
-      setTimeout(() => {
-        addSingleBall();
-      }, i * 500);
+      /* setTimeout(() => {
+      }, i * 1); */
+      addSingleBall();
     }
   };
 
